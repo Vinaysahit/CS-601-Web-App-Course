@@ -21,7 +21,7 @@
 
         <main>
             <h1 style="text-align: center;"> This Website is going to be a starter for the work</h1>
-            <p>The mission of project is to feed the undernourished in most nutritious way</p>
+            <p>The mission of project is to feed the <span style="color: brown">undernourished</span> in most <span style="color: green">nutritious</span> way</p>
             <section>
                 <h2> This job requires two parts: This is software part</h2>
             </section>
@@ -30,18 +30,61 @@
                 <p>This part of webpage is very crucial for our "feed this". <li> I have taken style sheet from w3 schools(I did not copy, I learnt)</li></p>
             </aside>
         </main>
-    
+        
+        <div>
+            <p>I think this div tag is working properly. Let us throw an image below.</p>
+            <img src="rice.jpg" width="500" height="500">
+            <p>Looks like image tag is working, lets try video</p>
+            <video width="500" height="500" controls>
+                <source src="rain.mp4" type="video/mp4">
+            </video>
+            <hr>
+            <p> Looks like video is also working fine</p>
+            <p>Play the audio for yours plants for better growths</p>
+            <audio controls>
+                <source src = "sound.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
         <section>
             <h2> This job requires two parts: This is logistics part</h2>
             <article>
                 <h5>This needs another part of team for the job</h5>
                 <p>This team has different BA's question and requirements, and procedures.</p>
             </article>
+            <p>I need to collect more data for this table to show the real statistics</p>
+            <table style="border: 1px solid black">
+                <tr >
+                    <th> No. </th>
+                    <th> Name of Crop</th>
+                    <th> Yield</th>
+                    <th> Year</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vari</td>
+                    <td> 500 </td>
+                    <td> 2022</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> Jonna </td>
+                    <td>300</td>
+                    <td>2022    </td>
+                </tr>
+            </table>
         </section>
 
         <footer>
-            <p>This is the footer tag code. I think I will know more about it when I use in industry</p>
+            <p>This is the footer tag code. I think I will know more about it when I use in industry. The purpose of this is for feedback form</p>
+            <p>Please write me a fee for to improve my website and get a good grade.</p>
+            <form>
+                <label for="Feedback content">Please give us your valuable feedback</label>  
+                <input type="text" name="Feedback content"><br>
+                <input type="submit" value="submit">    
+            </form>
         </footer>
-
+        <button type="button" style="position: absolute;">Have a nutritious day</button>
+        <p>I tried to move the button in the middle, but I couldn't.</p>
     </body>
 </html>
