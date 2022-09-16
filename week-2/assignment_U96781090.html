@@ -2,21 +2,36 @@
 <html lang="en">
     <head>
         <title>Age</title>
+        <script>
+            function age(){
+                let input = document.getElementById("dob").value;
+                var date = new Date(input);
+
+                if(input==null || input==''){
+                    document.getElementById("message").innerHTML = "Date is empty!";
+                    return false;
+                }
+                else{
+
+                    var difference = Date.now() - date.getTime();
+                    var ageDate = new Date(difference);
+                    var year = ageDate.getUTCFullYear();
+                    var age = Math.abs(year-1970);
+
+                }
+                return document.getElementById("result").innerHTML = "Age is: "+age;
+            }
+        </script>
     </head>
     <body>
-        <p>Enter your date of birth</p>
-        
-        <input type="date" value="dob">
+        <h2 align = "center">Enter your date of birth</h2>
+        <h2 id="message"></h2>
+        <div align = "center">
+        <input type="date" id="dob">
 
-        <input type="submit">
+        <button type="submit" onclick="age()">Actual age</button>
+        <h3 id = "result" align="center"></h3>
+        </div>
 
-        <script>
-            window.addEventListener("DOMContentLoaded", function(event)
-            {
-                console.log("This is a new one")
-                var name = window.prompt("Enter your name: ");
-                
-            })
-        </script>
     </body>
 </html>
