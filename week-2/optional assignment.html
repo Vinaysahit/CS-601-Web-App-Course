@@ -2,6 +2,19 @@
 <html lang="en">
     <head>
         <title>Age</title>
+        
+    </head>
+    <body>
+        <h2 align = "center">Enter your date of birth</h2>
+        <h2 id="message"></h2>
+        <div align = "center">
+        <input type="date" id="dob">
+
+        <button type="submit" onclick="age()">Actual age</button>
+        <h3 id = "result" align="center"></h3>
+        <p id="firstletter">This paragraph is using the JQuery core commands. It is trying to implement some options only available in jquery core.</p>
+        </div>
+
         <script>
             function age(){
                 let input = document.getElementById("dob").value;
@@ -19,19 +32,9 @@
                     var age = Math.abs(year-1970);
 
                 }
+                var letter = document.getElementById("firstletter")
                 return document.getElementById("result").innerHTML = "Age is: "+age;
             }
         </script>
-    </head>
-    <body>
-        <h2 align = "center">Enter your date of birth</h2>
-        <h2 id="message"></h2>
-        <div align = "center">
-        <input type="date" id="dob">
-
-        <button type="submit" onclick="age()">Actual age</button>
-        <h3 id = "result" align="center"></h3>
-        </div>
-
     </body>
 </html>
