@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+
+    <style>
+        #selector{
+        background-color: blue;
+        color: white;
+    }
+
+    .question2{
+        font-size: 1in;
+        color: red;
+        background: cornsilk;
+    }
+    </style>
+
 </head>
 <body>
-    <p id="selector">This is a paragraph that is the tries to implement id selectors </p>
+    <p id="selector" class="container">This is a paragraph that is the tries to implement id selectors </p>
+    <p class="question2" id="question2"> Part-2 of this quiz.</p>
+    <script>
+        const element = document.getElementById("selector")
+        if(element.matches(".container")) {console.log("Matches is working")} 
+        else{console.log("Matches is not working")}
+        const element2 = document.getElementsByClassName("question2")
+        
+        const element3 = document.getElementsByClassName("question2")
+    </script>
 </body>
 </html>
