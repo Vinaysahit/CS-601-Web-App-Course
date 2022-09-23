@@ -2,39 +2,63 @@
 <html lang="en">
     <head>
         <title>Age</title>
+
+        <style>
+            .first:first-letter{
+                color: red;
+                height: 10vh;
+                background-color: white;
+                border-style: solid;
+                border-color: black;
+            }
+            body{
+                background-color: rgb(239, 247, 82);
+            }
+            .second{
+                border-style: dotted;
+                border-color: blue;
+            }
+            .odd{
+                background-color: cornsilk;
+            }
+        </style>
         
     </head>
     <body>
-        <h2 align = "center">Enter your date of birth</h2>
-        <h2 id="message"></h2>
-        <div align = "center">
-        <input type="date" id="dob">
 
-        <button type="submit" onclick="age()">Actual age</button>
-        <h3 id = "result" align="center"></h3>
-        <p id="firstletter">This paragraph is using the JQuery core commands. It is trying to implement some options only available in jquery core.</p>
+        <p class="first">This paragraph is using the JQuery core commands. It is trying to implement some options only available in jquery core.</p>
+
+        <div class="second">
+            <p>This is the div we are looking for</p>
+            <li>List item tag</li>
         </div>
 
+        <span id="target" name="spantag1" class="spantag1">
+            This is the span text
+        </span>
+        
+        <section class="odd">
+            <span>This is a great work.</span>
+        </section>
+            
+        <section class="odd">
+            <span>But what is the work?</span>
+        </section>
+            
+        <section class="odd">
+            <span>Let's find out.</span>
+        </section>
+
+        <section class="odd">
+            <span>Ok Bye!</span>
+        </section>
+
         <script>
-            function age(){
-                let input = document.getElementById("dob").value;
-                var date = new Date(input);
 
-                if(input==null || input==''){
-                    document.getElementById("message").innerHTML = "Date is empty!";
-                    return false;
-                }
-                else{
-
-                    var difference = Date.now() - date.getTime();
-                    var ageDate = new Date(difference);
-                    var year = ageDate.getUTCFullYear();
-                    var age = Math.abs(year-1970);
-
-                }
-                var letter = document.getElementById("firstletter")
-                return document.getElementById("result").innerHTML = "Age is: "+age;
-            }
+                var letter = document.getElementsByClassName("first")
+                console.log(letter)
+                var val = document.getElementById("target")
+                console.log(val.getAttribute('name'));
         </script>
     </body>
 </html>
