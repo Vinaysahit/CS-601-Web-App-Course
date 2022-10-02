@@ -7,7 +7,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Please Enter the number you desire to be worded into month.</h1>
+    <input type="number" id="month">
+    <button id="btn">Get Month</button>
+    <p id="worded_month" style="font-style:italic ;"></p>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script>
+
+        const element = document.getElementById("btn");
+        const a = element.addEventListener("click", myFunction);
+        
+        function myFunction() {
+            let month_var = document.getElementById("month").value;
+            const a = getMonthNameFrom(month_var);
+            document.getElementById("worded_month").innerHTML = a;
+        }
+        function getMonthNameFrom(monthAsInt) {
+            const monthNames = new Map();
+            monthAsInt = monthAsInt-1;
+            monthNames.set(0, "January");
+            monthNames.set(1, "February");
+            monthNames.set(2, "March");
+            monthNames.set(3, "April");
+            monthNames.set(4, "May");
+            monthNames.set(5, "June");
+            monthNames.set(6, "July");
+            monthNames.set(7, "August");
+            monthNames.set(8, "September");
+            monthNames.set(9, "October");
+            monthNames.set(10, "November");
+            monthNames.set(11, "December"); 
+
+            const result = monthNames.get(monthAsInt);
+            if ( result == undefined ) {
+                throw new Error("Unknown month");
+            }
+
+            return result;
+        }
+    </script>
   </body>
 </html>
