@@ -1,0 +1,55 @@
+html,body{
+    height: 25%;
+}
+.orange1 {
+    background-color: orange;
+    margin-bottom: 3px;
+    height: 100%;
+    float: left;
+}
+.orange2{
+    background-color: orange;
+    margin-bottom: 6px;
+    height: 100%;
+    float: right;
+}
+.green{
+    background-color: greenyellow;
+    margin-bottom: 6px;
+    height: 260%;
+}
+.blue1{
+    background-color: rgb(89, 89, 255);
+    margin-bottom: 3px;
+    height: 100%;
+}
+.blue2{
+    background-color: rgb(89, 89, 255);
+    margin-bottom: 3px;
+    height: 100%;
+}
+.blue3{
+    background-color: rgb(89, 89, 255);
+    margin-bottom: 6px;
+    height: 100%;
+}
+.grey1{
+    background-color: grey;
+    margin-bottom: 3px;
+    height: 100%;
+}
+.grey2{
+    background-color: grey;
+    margin-bottom: 3px;
+    height: 100%;
+}
+.grey3{
+    background-color: grey;
+    margin-bottom: 3px;
+    height: 100%;
+}
+.grey4{
+    background-color: grey;
+    height: 100%;
+}
+
