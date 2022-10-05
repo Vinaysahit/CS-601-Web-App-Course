@@ -38,33 +38,29 @@
     .grey1{
         background-color: grey;
         height: 4em;
-        width: 49%;
-        float: left;
+        width: 100%;
         margin-top: 1em;
     }
     .grey2{
         background-color: grey;
         height: 4em;
-        width: 50%;
-        float: right;
+        width: 100%;
         margin-top: 1em;
     }
     .grey3{
         background-color: grey;
         height: 4em;
-        width: 49%;
-        float: left;
+        width: 100%;
         margin-top: 1em;
     }
     .grey4{
         background-color: grey;
         height: 4em;
-        width: 50%;
-        float: right;
+        width: 100%;
         margin-top: 1em;
     }
 }
-\
+
 @media screen and (max-width: 768px)
 {
     .orange1 {
