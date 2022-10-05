@@ -1,69 +1,205 @@
-@media screen and (min-width: 320px){
-    html,body{
-        height: 28%;
+@media screen and (max-width: 320px)
+{
+    .orange1{
+        background-color: orange;
+        height: 4em;
+        width: 100%;
     }
-        
+    .orange2{
+        background-color: orange;
+        height: 4em;
+        width: 100%;
+        margin-top: 1em;
+    }
+    .green{
+        background-color: greenyellow;
+        margin-top: 1em;
+        width: 100%;
+        height: 10em;
+    }
+    .blue1{
+        background-color: blue;
+        margin-top: 1em;
+        width: 100%;
+        height: 5em;
+    }
+    .blue2{
+        background-color: blue;
+        margin-top: 1em;
+        width: 100%;
+        height: 5em;
+    }
+    .blue3{
+        background-color: blue;
+        margin-top: 1em;
+        width: 100%;
+        height: 5em;
+    }
+    .grey1{
+        background-color: grey;
+        height: 4em;
+        width: 49%;
+        float: left;
+        margin-top: 1em;
+    }
+    .grey2{
+        background-color: grey;
+        height: 4em;
+        width: 50%;
+        float: right;
+        margin-top: 1em;
+    }
+    .grey3{
+        background-color: grey;
+        height: 4em;
+        width: 49%;
+        float: left;
+        margin-top: 1em;
+    }
+    .grey4{
+        background-color: grey;
+        height: 4em;
+        width: 50%;
+        float: right;
+        margin-top: 1em;
+    }
+}
+\
+@media screen and (max-width: 768px)
+{
+    .orange1 {
+        background-color: orange;
+        height: 4em;
+        width: 100%;
+    }
+    .orange2{
+        background-color: orange;
+        height: 4em;
+        width: 100%;
+        margin-top: 1em;
+    }
+    .green{
+        background-color: greenyellow;
+        margin-top: 1em;
+        width: 100%;
+        height: 10em;
+    }
+    .blue1{
+        background-color: blue;
+        margin-top: 1em;
+        width: 100%;
+        height: 5em;
+    }
+    .blue2{
+        background-color: blue;
+        margin-top: 1em;
+        width: 100%;
+        height: 5em;
+    }
+    .blue3{
+        background-color: blue;
+        margin-top: 1em;
+        width: 100%;
+        height: 5em;
+    }
+    .grey1{
+        background-color: grey;
+        height: 4em;
+        width: 49%;
+        float: left;
+        margin-top: 1em;
+    }
+    .grey2{
+        background-color: grey;
+        height: 4em;
+        width: 50%;
+        float: right;
+        margin-top: 1em;
+    }
+    .grey3{
+        background-color: grey;
+        height: 4em;
+        width: 49%;
+        float: left;
+        margin-top: 1em;
+    }
+    .grey4{
+        background-color: grey;
+        height: 4em;
+        width: 50%;
+        float: right;
+        margin-top: 1em;
+    }
 }
 
-@media screen and (min-width: 768px){
-    html,body{
-        height: 28%;
-    }    
+@media screen and (max-width: 1024px)
+{
+    .orange1 {
+        background-color: orange;
+        height: 4em;
+        width: 49%;
+        float: left;
+    }
+    .orange2{
+        background-color: orange;
+        height: 4em;
+        width: 50%;
+        float: right;
+    }
+    .green{
+        background-color: greenyellow;
+        position: absolute;
+        margin-top: 5em;
+        width: 100%;
+        height: 10em;
+    }
+    .blue1{
+        background-color: blue;
+        position: absolute;
+        margin-top: 16em;
+        width: 100%;
+        height: 5em;
+    }
+    .blue2{
+        background-color: blue;
+        position: absolute;
+        margin-top: 22em;
+        width: 100%;
+        height: 5em;
+    }
+    .blue3{
+        background-color: blue;
+        position: absolute;
+        margin-top: 28em;
+        width: 100%;
+        height: 5em;
+    }
+    .grey1{
+        background-color: grey;
+        height: 4em;
+        width: 49%;
+        float: left;
+        margin-top: 30em;
+    }
+    .grey2{
+        background-color: grey;
+        height: 4em;
+        width: 50%;
+        float: right;
+        margin-top: 30em;
+    }
+    .grey3{
+        background-color: grey;
+        height: 4em;
+        width: 49%;
+        float: left;
+        margin-top: 1em;
+    }
+    .grey4{
+        background-color: grey;
+        height: 4em;
+        width: 50%;
+        float: right;
+        margin-top: 1em;
+    }
 }
-
-@media screen and (min-width: 1024px){
-    html,body{
-        height: 28%;
-    }    
-}
-.orange1 {
-    background-color: orange;
-    margin-bottom: 3px;
-    height: 100%;
-
-}
-.orange2{
-    background-color: orange;
-    margin-bottom: 6px;
-    height: 100%;
-}
-.green{
-    background-color: greenyellow;
-    margin-bottom: 6px;
-    height: 260%;
-}
-.blue1{
-    background-color: rgb(89, 89, 255);
-    margin-bottom: 3px;
-    height: 100%;
-}
-.blue2{
-    background-color: rgb(89, 89, 255);
-    margin-bottom: 3px;
-    height: 100%;
-}
-.blue3{
-    background-color: rgb(89, 89, 255);
-    margin-bottom: 6px;
-    height: 100%;
-}
-.grey1{
-    background-color: grey;
-    margin-bottom: 3px;
-    height: 100%;
-}
-.grey2{
-    background-color: grey;
-    margin-bottom: 3px;
-    height: 100%;
-}
-.grey3{
-    background-color: grey;
-    margin-bottom: 3px;
-    height: 100%;
-}
-.grey4{
-    background-color: grey;
-    height: 100%;
-}
-
