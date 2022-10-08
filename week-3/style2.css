@@ -1,0 +1,27 @@
+#orange{
+    background-color: orange;
+    height: 4em;
+    width: 100%;
+    border: 1px dotted white;
+}
+#green{
+    background-color: greenyellow;
+    height: 10em;
+    width: 100%;
+    border: 1px dotted white;
+    margin-top: 1em;
+}
+#blue{
+    background-color: blue;
+    height: 4em;
+    width: 100%;
+    border: 1px dotted white;
+    margin-top: 1em;
+}
+#grey{
+    background-color: grey;
+    height: 4em;
+    width: 100%;
+    border: 1px dotted white;
+    margin-top: 1em;
+}

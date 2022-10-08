@@ -6,21 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
     <link rel="stylesheet" href="style2.css">
-    <link href='bootstrap.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-    <div class="row">
-    <div class = "orange" id="orange"></div>
-    <div class = "orange" id="orange"></div>
+    <!--when width is less than or equal to 51 the 368px output is working-->
+    <div class="container">
+        <div class="row">
+            <div class = "col lg-6 md-12 sm-12 " id="orange"></div>
+            <div class = "col lg-6 md-12 sm-12" id="orange"></div>
+        </div>
     </div>
-    <div class = "green" id="green"></div>
-    <div class = "blue1" id="blue1"></div>
-    <div class = "blue2" id="blue2"></div>
-    <div class = "blue3" id="blue3"></div>
-    <div class = "grey1" id="grey1"></div>
-    <div class = "grey2" id="grey2"></div>
-    <div class = "grey3" id="grey3"></div>
-    <div class = "grey4" id="grey4"></div>
-    <script src="bootstrap.bundle.min.js"></script>
+
+    <div class="container">
+        <div class="row">
+            <div class = "col" id="green"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class = "col lg-4 md-12 sm-12" id="blue"></div>
+            <div class = "col lg-4 md-12 sm-12" id="blue"></div>
+            <div class = "col lg-4 md-12 sm-12" id="blue"></div>
+        </div>        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class = "col lg-3 md-6 sm-12" id="grey"></div>
+            <div class = "col lg-3 md-6 sm-12" id="grey"></div>
+            <div class = "col lg-3 md-6 sm-12" id="grey"></div>
+            <div class = "col lg-3 md-6 sm-12" id="grey"></div>
+        </div>      
+    </div>
+
+    <div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
