@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1. Declaring function in a normal way
+        function greet1() {
+            console.log("Hello world");
+        }
+        greet1();
+        // 2. Declaring in an expression
+        var greet2 = function () {
+        console.log("Welcome to Javascript");
+        };
+        greet2();
+        // 3. Declaring in a anonymous way
+        setTimeout(
+        function () {
+            console.log("Executed after three seconds");
+        }  , 3000
+        )
+        // 4. Immediately invoking a function
+        (function () {
+        console.log("I am immediately invoked");
+        })();
+        // 5. Declaring function as constructors
+        const multiply = new Function('a', 'b', 'return a * b');
+        console.log(multiply(2, 6));
+        // 6. We can declare functions by hoisting method
+        greet3();
+        function greet3() {
+            console.log("Hello world");
+        }
+        // 7. We can declare functions by arrow method
+        const greet4 = () => "Hello World"
+        greet4()
+    </script>
+</body>
+</html>

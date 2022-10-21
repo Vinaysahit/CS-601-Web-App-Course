@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-3</title>
+    <style type="text/css">
+        h1 {
+        font-family: 'Mountains of Christmas', cursive;
+        text-align: center;
+        }
+    </style>        
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">    
+
+</head>
+<body>
+    <h1>Unfortunately, the number of days left in my amazing semester at Boston University is <span id ="difference"></span></h1>
+    
+    <script type="text/javascript">
+        var date1 = new Date();
+        var date2 = new Date("12/22/2022");
+        var Difference_In_Time = date2.getTime() - date1.getTime();
+        var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+        var difference = document.getElementById("difference")
+        difference.textContent = Difference_In_Days;
+    </script>
+</body>
+</html>

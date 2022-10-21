@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 7</title>
+</head>
+<body>
+    <input placeholder="Enter your query" id="query">
+    <button type="submit" onclick="go()">Check</button>
+    
+    <span id="get_query"></span>
+    <script>
+        function go(){
+        let words = new Array("delete", "truncate", "update","insert","drop");
+        let sql = document.getElementById("query").value
+
+        for(var i = 0; i<sql.length;i+=1){
+            if(words.includes(sql[i])){
+                sql[i] = reverseString(sql[i])
+            }
+        }
+
+
+        function reverseString(str) {
+        var splitString = str.split(""); 
+        var reverseArray = splitString.reverse();
+        var joinArray = reverseArray.join(""); 
+        return joinArray;
+        }
+
+        var get_query = document.getElementById("get_query")
+        document.getElementById("get_query").value = sql
+    }
+
+
+
+
+
+    </script>
+
+</body>
+</html>
