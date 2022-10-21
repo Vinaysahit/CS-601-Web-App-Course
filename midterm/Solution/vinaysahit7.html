@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solution 7</title>
-</head>
-<body>
-    <input placeholder="Enter your query" id="query">
+  </head>
+
+  <body>
+    <input placeholder="Enter your query" id="query" />
     <button type="submit" onclick="go()">Check</button>
-    
+    <br />
     <span id="get_query"></span>
     <script>
-        function go(){
-        let words = new Array("delete", "truncate", "update","insert","drop");
-        let sql = document.getElementById("query").value
-
-        for(var i = 0; i<sql.length;i+=1){
-            if(words.includes(sql[i])){
-                sql[i] = reverseString(sql[i])
-            }
+      function newReverseString(str) {
+        if (str === "") return "";
+        else return newReverseString(str.substr(1)) + str.charAt(0);
+      }
+      function go() {
+        const letters = new Set([
+          "delete",
+          "truncate",
+          "update",
+          "insert",
+          "drop",
+        ]);
+        var sql = document.getElementById("query").value;
+        var input = sql.split(" ");
+        finalString = "";
+        for (var j = 0; j < input.length; j++) {
+          stringValue = input[j];
+          if (letters.has(input[j])) {
+            valueAdded = newReverseString(stringValue);
+          } else {
+            valueAdded = stringValue;
+          }
+          finalString = finalString + valueAdded + " ";
         }
+        finalString = finalString.slice(0, -1);
 
-
-        function reverseString(str) {
-        var splitString = str.split(""); 
-        var reverseArray = splitString.reverse();
-        var joinArray = reverseArray.join(""); 
-        return joinArray;
-        }
-
-        var get_query = document.getElementById("get_query")
-        document.getElementById("get_query").value = sql
-    }
-
-
-
-
-
+        var get_query = document.getElementById("get_query");
+        document.getElementById("get_query").innerHTML = finalString;
+      }
     </script>
-
-</body>
+  </body>
 </html>
