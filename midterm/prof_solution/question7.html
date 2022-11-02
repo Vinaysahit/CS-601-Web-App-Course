@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="textarea">
+        <textarea id="text" rows="5" cols="10" name="sql"></textarea>
+        <input type="button" id="submit" name="submit" value="Submit">
+    </div>
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            document.getElementById("submit").addEventListener("click", function(event) {
+                const area = document.getElementById("text").value;
+                var newtext = area.replace("delete",   "eteled")
+                                  .replace("truncate", "etacnurt")
+                                  .replace("update",   "etadpu")
+                                  .replace("insert",   "tresni")
+                                  .replace("drop",     "pord");
+
+                document.getElementById("text").value = newtext;
+            });
+        }); 
+    </script>
+</body>
+</html>

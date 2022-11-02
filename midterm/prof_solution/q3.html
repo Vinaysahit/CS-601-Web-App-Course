@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+      body {
+        font-family: "Mountains of Christmas", sans-serif;;
+      }
+      span {
+        font-size: 1in;
+      }
+    </style>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const rightNow = new Date();
+        const targetDate = new Date("12/31/2022");
+        const timeDiff = targetDate.getTime() - rightNow.getTime();
+        
+        // 60 seconds = 1 minute;  60 minutes = 1 hour = 3600
+        // 3600 * 24 = 24 hours in a day
+        const diffInDays = Math.ceil(timeDiff/(1000 * 3600 * 24));
+        
+        document.querySelector("span").innerText = diffInDays;
+      });
+    </script>
+</head>
+<body>
+    <h1>
+        Unfortunately, the number of days left in my amazing 
+        semester at Boston University is <span></span>
+    </h1>
+</body>
+</html>

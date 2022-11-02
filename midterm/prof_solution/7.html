@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Question 7</title>
+		<style>
+			textarea {
+				height: 2in;
+				width: 50%;
+			}
+			input[type=button] {
+				display: block;
+			}
+		</style>
+		<script>
+			window.addEventListener("DOMContentLoaded", ()=> {
+				document.querySelector("input[type=button]").addEventListener("click", event => {
+					convert();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<textarea id="target" ></textarea>
+		<input type="button" value="Execute"/>
+	</body>
+	<script>
+		function convert() {
+			const targetElem = document.getElementById("target")
+			const str = targetElem.value;
+			
+			const k1 = "delete";   const k11 = "eteled";
+			const k2 = "truncate"; const k21 = "etacnurt";
+			const k3 = "update";   const k31 = "etadpu";
+			const k4 = "insert";   const k41 = "tresni";
+			const k5 = "drop";     const k51 = "pord";
+
+			const result = [];
+			const arr = str.split(' ');
+
+			for (var i = 0; i < arr.length; i++) {
+				if (arr[i] === k1) {
+					arr[i] = k11
+				}
+				if (arr[i] === k2) {
+					arr[i] = k21
+				}
+				if (arr[i] === k3) {
+					arr[i] = k31
+				}
+				if (arr[i] === k4) {
+					arr[i] = k41
+				}
+				if (arr[i] === k5) {
+					arr[i] = k51
+				} 
+				result.push(arr[i]);
+			}
+
+			targetElem.value = result.join(" ");
+		}
+	</script>
+</html>

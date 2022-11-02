@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Question 10</title>
+	<style type="text/css">
+		#result {
+			border-radius: 50%;
+			border-style: solid;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+	<script>
+	   window.addEventListener("DOMContentLoaded", () => {
+			document.querySelector("#run").addEventListener("click", () => {
+				const r = document.querySelector("[name=red]").value;
+				const g = document.querySelector("[name=green]").value;
+				const b = document.querySelector("[name=blue]").value;
+	
+				document.querySelector('#result').style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b +')';
+			});
+			document.querySelector("#redo").addEventListener("click", event => {
+				document.querySelector('#result').style.backgroundColor = 'white';
+			});
+	   });
+    </script>
+  </head>
+  <body>
+		<div id="result"></div>
+		<input name="red" type="number" min="0" max="255"/>
+		<input name="green" type="number" min="0" max="255"/>
+		<input name="blue" type="number" min="0" max="255"/>
+		
+		<input type="button" value="Run" id="run"/>
+		<input type="button" value="Reset" id="redo"/>
+  </body>
+</html>
