@@ -1,0 +1,10 @@
+#logo{
+    width:150px;
+    height:100px;
+}
+body{
+    background-color: rgb(175, 252, 127);
+}
+#firstline{
+    border-top: 1px solid black;
+}
