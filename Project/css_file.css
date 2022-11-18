@@ -3,7 +3,7 @@
     height:100px;
 }
 body{
-    background-color: rgb(175, 252, 127);
+    background-image: url(back.png);
 }
 #firstline{
     border-top: 1px solid black;
