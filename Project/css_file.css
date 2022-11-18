@@ -8,3 +8,9 @@ body{
 #firstline{
     border-top: 1px solid black;
 }
+
+.logout{
+    color: blue;
+    background-color: greenyellow;
+    float: right;
+}
