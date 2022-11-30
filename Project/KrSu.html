@@ -19,7 +19,7 @@
      
     <br><br>
     <div id="progress">
-        <div id="progresstext" onclick="move()">Progress Bar:</div>
+        <div id="progresstext" onclick="move()">Total Progress:</div>
         <div id="myProgress">
             <div id="myBar"></div>
         </div>
@@ -28,8 +28,8 @@
 
     <div class="crop-selector">
         <select id="format">
-           <option selected disabled>Select the crop:</option>
-            <option>Paddy</option>
+           <option selected disabled>Paddy</option>
+            <option>Select the crop:</option>
             <option>Turmeric</option>
             <option>Wheat</option>
             <option>Banana</option>
@@ -38,24 +38,33 @@
             <option>Coffee</option>
         </select>
     </div>
+    <br>
+    
     <div id="box">
     <ins class="hover-zoom" id="cropid">Crop ID#: 3777</ins>
-
+    <br>
+    <br>
+    
+    <div id="progress2">
+        <div id="progresstext2" onclick="internal_progress()">Crop Progress:</div>
+        <div id="myProgress2">
+            <div id="myBar2"></div>
+        </div>
+    </div>
     <div class="main">
         <div class="scene">
           <div class="plant">
-            - for i in (1..32)
               <div class="img">
                 <div class="img__content">
-                  <img src="2.png">
+                  <img src="1.png">
                 </div>
               </div>
-            -
           </div>
           <div class="shadow"></div>
         </div>
     </div>
 
+    
     <br>
     <br>
     <br>
@@ -65,6 +74,11 @@
     <script>
         // https://css-tricks.com/animating-number-counters/ : link to score counter
         
+        if (navigator.userAgent.match(/AppleWebKit/) && !navigator.userAgent.match(/Chrome/))
+        {
+            document.documentElement.className += " safari";
+    }
+
         //
         var i = 0;
         function move() {
@@ -84,9 +98,26 @@
             }
         }
         }
-        if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {  
-            document.documentElement.className += " safari";
+
+        //
+        //
+        function internal_progress() {
+        if (i == 0) {
+            i = 1;
+            var elem = document.getElementById("myBar2");
+            var width = 1;
+            var id = setInterval(frame, 10);
+            function frame() {
+            if (width >= 90) {
+                clearInterval(id);
+                i = 0;
+            } else {
+                width++;
+                elem.style.width = width + "%";
             }
+            }
+        }
+        }
         //
         class plantAge{
             constructor(age){
