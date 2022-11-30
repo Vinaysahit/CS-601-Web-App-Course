@@ -25,16 +25,43 @@
         </div>
     </div>
     <br>
-    <div id="cropselect">
-        Select the crop you want to learn about:
-        <select class="selectpicker">
-        <option>Mustard</option>
-        <option>Ketchup</option>
-        <option>Relish</option>
-      </select>
-    </div>  
+
+    <div class="crop-selector">
+        <select id="format">
+           <option selected disabled>Select the crop:</option>
+            <option>Paddy</option>
+            <option>Turmeric</option>
+            <option>Wheat</option>
+            <option>Banana</option>
+            <option>Garlic</option>
+            <option>Sugarcane</option>
+            <option>Coffee</option>
+        </select>
+    </div>
+    <div id="box">
     <ins class="hover-zoom" id="cropid">Crop ID#: 3777</ins>
 
+    <div class="main">
+        <div class="scene">
+          <div class="plant">
+            - for i in (1..32)
+              <div class="img">
+                <div class="img__content">
+                  <img src="2.png">
+                </div>
+              </div>
+            -
+          </div>
+          <div class="shadow"></div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    </div>
     <script>
         // https://css-tricks.com/animating-number-counters/ : link to score counter
         
@@ -57,7 +84,15 @@
             }
         }
         }
+        if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {  
+            document.documentElement.className += " safari";
+            }
         //
+        class plantAge{
+            constructor(age){
+                this.age = age
+            }
+        }
     </script>
 </body>
 </html> 
