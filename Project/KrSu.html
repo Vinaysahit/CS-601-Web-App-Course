@@ -46,11 +46,22 @@
     <br>
     
     <div id="progress2">
-        <div id="progresstext2" onclick="internal_progress()">Crop Progress:</div>
+        <div id="progresstext2">Crop Progress:</div>
         <div id="myProgress2">
             <div id="myBar2"></div>
         </div>
     </div>
+    <br>
+    <div id="quiz_link">
+        Let's go to the crop quiz
+    </div>
+    <br>
+    <br>
+    <div id="forum">
+        Let's talk about the crop with each other
+    </div>
+    <br>
+    <br>
     <div class="main">
         <div class="scene">
           <div class="plant">
@@ -63,12 +74,14 @@
           <div class="shadow"></div>
         </div>
     </div>
-
-    
+    <br>
+    <input type="range" min="1" max="100" value="50" id="age-slider">
+    <br>
+    <div id="secret-fact">
+       Pssssst!!! Wanna know today's secret? Click Me!!
+    </div>
     <br>
     <br>
-    <br>
-
 
     </div>
     <script>
@@ -100,25 +113,7 @@
         }
 
         //
-        //
-        function internal_progress() {
-        if (i == 0) {
-            i = 1;
-            var elem = document.getElementById("myBar2");
-            var width = 1;
-            var id = setInterval(frame, 10);
-            function frame() {
-            if (width >= 90) {
-                clearInterval(id);
-                i = 0;
-            } else {
-                width++;
-                elem.style.width = width + "%";
-            }
-            }
-        }
-        }
-        //
+
         class plantAge{
             constructor(age){
                 this.age = age

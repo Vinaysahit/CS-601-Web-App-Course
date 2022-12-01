@@ -1,4 +1,4 @@
-/*The color of the website is #3824ff */
+/*The color of the website is #291ea5 */
 
 #logo{
     width:150px;
@@ -35,7 +35,7 @@ body{
     margin-left: 3%;
 }
 .logout:hover{
-    background-color: #3824ff;
+    background-color: #291ea5;
     color: white;
     box-shadow:
     1px 1px black,
@@ -67,19 +67,11 @@ body{
     border: 0.1px solid white;
     overflow: hidden;
   }
-
-#box{
-    width:auto;
-    height:max-content;
-    margin-left: 3%;
-    margin-right: 3%;
-    border:1px solid #ffffff;
-}  
-
+  
 #myBar {
     width: 1%;
     height: 30px;
-    background-color: #3824ff;
+    background-color: #291ea5;
   }
 #progress2{
     margin-left: 2.3%;
@@ -102,9 +94,9 @@ body{
   }
   
 #myBar2{
-    width: 1%;
+    width: 90%;
     height: 30px;
-    background-color: #3824ff;
+    background-color: #291ea5;
   }
 
 #cropid{
@@ -163,7 +155,14 @@ select {
  .crop-selector:hover::after {
     color: #fff;
  }
-
+#box{
+    width:auto;
+    height:max-content;
+    margin-left: 3%;
+    margin-right: 3%;
+    border:1px solid #ffffff;
+    flex: 1 1;
+}
 
 *, :before, :after {
     box-sizing:border-box;
@@ -562,3 +561,57 @@ select {
       transform: skewY(2deg);
     }
   }
+
+#quiz_link{
+    background-color: #291ea5;
+    box-shadow: 0 5px 0 #181161;
+    color: white;
+    padding: 1em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 3%;
+    margin-right: 77%;
+  }
+
+#quiz_link:hover {
+    background-color: #2f1fdc;
+    cursor: pointer;
+  }
+  
+  #quiz_link:active {
+    box-shadow: none;
+    top: 5px;
+  }
+
+  #forum{
+    background-color: #291ea5;
+    box-shadow: 0 5px 0 #181161;
+    color: white;
+    padding: 1em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 3%;
+    margin-right: 66%;
+  }
+  
+  #forum:hover {
+    background-color: #2f1fdc;
+    cursor: pointer;
+  }
+  
+  #forum:active {
+    box-shadow: none;
+    top: 5px;
+  }
+  #secret-fact{
+    box-shadow: inset 0 0 0 0 #291ea5;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+#secret-fact:hover {
+  box-shadow: inset 360px 0 0 0 #291ea5;
+  color: white;
+}
