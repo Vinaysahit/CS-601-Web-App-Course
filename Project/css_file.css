@@ -182,7 +182,7 @@ select {
     
   }
   
-  img {
+  img{
     max-width: auto;
     height: auto;
   }
@@ -288,238 +288,238 @@ select {
   .img:nth-of-type(1) {
     transform: rotateY(0deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -0.2s !important;
             animation-delay: -0.2s !important;
   }
   .img:nth-of-type(2) {
     transform: rotateY(11.25deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -0.4s !important;
             animation-delay: -0.4s !important;
   }
   .img:nth-of-type(3) {
     transform: rotateY(22.5deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -0.6s !important;
             animation-delay: -0.6s !important;
   }
   .img:nth-of-type(4) {
     transform: rotateY(33.75deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -0.8s !important;
             animation-delay: -0.8s !important;
   }
   .img:nth-of-type(5) {
     transform: rotateY(45deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -1s !important;
             animation-delay: -1s !important;
   }
   .img:nth-of-type(6) {
     transform: rotateY(56.25deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -1.2s !important;
             animation-delay: -1.2s !important;
   }
   .img:nth-of-type(7) {
     transform: rotateY(67.5deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -1.4s !important;
             animation-delay: -1.4s !important;
   }
   .img:nth-of-type(8) {
     transform: rotateY(78.75deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -1.6s !important;
             animation-delay: -1.6s !important;
   }
   .img:nth-of-type(9) {
     transform: rotateY(90deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -1.8s !important;
             animation-delay: -1.8s !important;
   }
   .img:nth-of-type(10) {
     transform: rotateY(101.25deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -2s !important;
             animation-delay: -2s !important;
   }
   .img:nth-of-type(11) {
     transform: rotateY(112.5deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -2.2s !important;
             animation-delay: -2.2s !important;
   }
   .img:nth-of-type(12) {
     transform: rotateY(123.75deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -2.4s !important;
             animation-delay: -2.4s !important;
   }
   .img:nth-of-type(13) {
     transform: rotateY(135deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -2.6s !important;
             animation-delay: -2.6s !important;
   }
   .img:nth-of-type(14) {
     transform: rotateY(146.25deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -2.8s !important;
             animation-delay: -2.8s !important;
   }
   .img:nth-of-type(15) {
     transform: rotateY(157.5deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -3s !important;
             animation-delay: -3s !important;
   }
   .img:nth-of-type(16) {
     transform: rotateY(168.75deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -3.2s !important;
             animation-delay: -3.2s !important;
   }
   .img:nth-of-type(17) {
     transform: rotateY(180deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -3.4s !important;
             animation-delay: -3.4s !important;
   }
   .img:nth-of-type(18) {
     transform: rotateY(191.25deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -3.6s !important;
             animation-delay: -3.6s !important;
   }
   .img:nth-of-type(19) {
     transform: rotateY(202.5deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -3.8s !important;
             animation-delay: -3.8s !important;
   }
   .img:nth-of-type(20) {
     transform: rotateY(213.75deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -4s !important;
             animation-delay: -4s !important;
   }
   .img:nth-of-type(21) {
     transform: rotateY(225deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -4.2s !important;
             animation-delay: -4.2s !important;
   }
   .img:nth-of-type(22) {
     transform: rotateY(236.25deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -4.4s !important;
             animation-delay: -4.4s !important;
   }
   .img:nth-of-type(23) {
     transform: rotateY(247.5deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -4.6s !important;
             animation-delay: -4.6s !important;
   }
   .img:nth-of-type(24) {
     transform: rotateY(258.75deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -4.8s !important;
             animation-delay: -4.8s !important;
   }
   .img:nth-of-type(25) {
     transform: rotateY(270deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -5s !important;
             animation-delay: -5s !important;
   }
   .img:nth-of-type(26) {
     transform: rotateY(281.25deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -5.2s !important;
             animation-delay: -5.2s !important;
   }
   .img:nth-of-type(27) {
     transform: rotateY(292.5deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -5.4s !important;
             animation-delay: -5.4s !important;
   }
   .img:nth-of-type(28) {
     transform: rotateY(303.75deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -5.6s !important;
             animation-delay: -5.6s !important;
   }
   .img:nth-of-type(29) {
     transform: rotateY(315deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -5.8s !important;
             animation-delay: -5.8s !important;
   }
   .img:nth-of-type(30) {
     transform: rotateY(326.25deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -6s !important;
             animation-delay: -6s !important;
   }
   .img:nth-of-type(31) {
     transform: rotateY(337.5deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -6.2s !important;
             animation-delay: -6.2s !important;
   }
   .img:nth-of-type(32) {
     transform: rotateY(348.75deg);
   }
-  .img .img__content {
+  .img .content-of-image {
     -webkit-animation-delay: -6.4s !important;
             animation-delay: -6.4s !important;
   }
   .img:first-of-type {
     position: relative;
   }
-  .img:nth-of-type(4n + 1) .img__content {
+  .img:nth-of-type(4n + 1) .content-of-image {
     -webkit-animation: wave 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
             animation: wave 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
   }
-  .img:nth-of-type(3n + 1) .img__content {
+  .img:nth-of-type(3n + 1) .content-of-image {
     opacity: 0.8;
   }
-  .img:nth-of-type(2n) .img__content {
+  .img:nth-of-type(2n) .content-of-image {
     display: none;
     opacity: 0.2;
   }
