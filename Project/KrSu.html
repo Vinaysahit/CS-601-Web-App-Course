@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css_file.css">
+    <link rel = "stylesheet" type="text/css" href="css_file.css">       
     <title>Learners Page </title>
 </head>
-
 <body>
     <span>
         <h1 id="name">Krishi Sukha</h1>
@@ -18,7 +16,7 @@
     <hr>
     <b id="page_heading">Learner's Mode</b>
     <ins id="score">Score: ##</ins>
-
+     
     <br><br>
     <div id="progress">
         <div id="progresstext" onclick="move()">Total Progress:</div>
@@ -30,7 +28,7 @@
 
     <div class="crop-selector">
         <select id="format">
-            <option selected disabled>Paddy</option>
+           <option selected disabled>Paddy</option>
             <option>Select the crop:</option>
             <option>Turmeric</option>
             <option>Wheat</option>
@@ -41,90 +39,86 @@
         </select>
     </div>
     <br>
-
+    
     <div id="box">
-        <ins class="hover-zoom" id="cropid">Crop ID#: 3777</ins>
-        <br>
-        <br>
-
-        <div id="progress2">
-            <div id="progresstext2">Crop Progress:</div>
-            <div id="myProgress2">
-                <div id="myBar2"></div>
-            </div>
+    <ins class="hover-zoom" id="cropid">Crop ID#: 3777</ins>
+    <br>
+    <br>
+    
+    <div id="progress2">
+        <div id="progresstext2">Crop Progress:</div>
+        <div id="myProgress2">
+            <div id="myBar2"></div>
         </div>
-        <br>
-        <div id="quiz_link">
-            Let's go to the crop quiz
-        </div>
-        <br>
-        <br>
-        <div id="forum">
-            Let's talk about the crop with each other
-        </div>
-        <br>
-        <br>
-        <div id="box-for-image-text">
-            <div class="main">
-                <div class="scene">
-                    <div class="plant">
-                        <div class="img">
-                            <div class="content-of-image">
-                                <img src="1.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shadow"></div>
+    </div>
+    <br>
+    <div id="quiz_link">
+        Let's go to the crop quiz
+    </div>
+    <br>
+    <br>
+    <div id="forum">
+        Let's talk about the crop with each other
+    </div>
+    <br>
+    <br>
+    <div class="main">
+        <div class="scene">
+          <div class="plant">
+              <div class="img">
+                <div class="content-of-image">
+                  <img src="1.png">
                 </div>
-            </div>
-            <br>
-            <div id="right-info">
-                AJAX
-            </div>
-            <br>
+              </div>
+          </div>
+          <div class="shadow"></div>
+        </div>
+    </div>
+    <br>
+    <input type="range" min="1" max="100" value="50" id="age-slider">
+    <br>
+    <div id="secret-fact">
+       Pssssst!!! Wanna know today's secret? Click Me!!
+    </div>
+    <br>
+    <br>
 
-        </div>
-        <br>
-        <br>
-        <div id="secret-fact">
-            Pssssst!!! Wanna know today's secret? Click Me!!
-        </div>
     </div>
     <script>
         // https://css-tricks.com/animating-number-counters/ : link to score counter
-
-        if (navigator.userAgent.match(/AppleWebKit/) && !navigator.userAgent.match(/Chrome/)) {
+        
+        if (navigator.userAgent.match(/AppleWebKit/) && !navigator.userAgent.match(/Chrome/))
+        {
             document.documentElement.className += " safari";
-        }
+    }
 
         //
         var i = 0;
         function move() {
-            if (i == 0) {
-                i = 1;
-                var elem = document.getElementById("myBar");
-                var width = 1;
-                var id = setInterval(frame, 10);
-                function frame() {
-                    if (width >= 50) {
-                        clearInterval(id);
-                        i = 0;
-                    } else {
-                        width++;
-                        elem.style.width = width + "%";
-                    }
-                }
+        if (i == 0) {
+            i = 1;
+            var elem = document.getElementById("myBar");
+            var width = 1;
+            var id = setInterval(frame, 10);
+            function frame() {
+            if (width >= 50) {
+                clearInterval(id);
+                i = 0;
+            } else {
+                width++;
+                elem.style.width = width + "%";
             }
+            }
+        }
         }
 
         //
 
-        class plantAge {
-            constructor(age) {
+        class plantAge{
+            constructor(age){
                 this.age = age
             }
         }
     </script>
 </body>
-
-</html>
+</html> 
