@@ -30,6 +30,7 @@
         <select id="format">
            <option selected disabled>Paddy</option>
             <option>Select the crop:</option>
+            <option>Paddy</option>
             <option>Turmeric</option>
             <option>Wheat</option>
             <option>Banana</option>
@@ -40,49 +41,58 @@
     </div>
     <br>
     
-    <div id="box">
-    <ins class="hover-zoom" id="cropid">Crop ID#: 3777</ins>
-    <br>
-    <br>
-    
-    <div id="progress2">
-        <div id="progresstext2">Crop Progress:</div>
-        <div id="myProgress2">
-            <div id="myBar2"></div>
+    <div id="box">      
+        <ins class="hover-zoom" id="cropid">Crop ID#: 3777</ins>
+        <br>
+        <br>
+        
+        <div id="progress2">
+            <div id="progresstext2">Crop Progress:</div>
+            <div id="myProgress2">
+                <div id="myBar2"></div>
+            </div>
         </div>
-    </div>
-    <br>
-    <div id="quiz_link">
-        Let's go to the crop quiz
-    </div>
-    <br>
-    <br>
-    <div id="forum">
-        Let's talk about the crop with each other
-    </div>
-    <br>
-    <br>
-    <div class="main">
-        <div class="scene">
-          <div class="plant">
-              <div class="img">
-                <div class="content-of-image">
-                  <img src="1.png">
+        <br>
+        <div id="quiz_link">
+            Let's go to the crop quiz
+        </div>
+        <br>
+        <br>
+        <div id="forum">
+            Let's talk about the crop with each other
+        </div>
+        <br>
+        <br>
+        <div class="flex-container">
+            <div class="flex-child">    
+                <div class="main">
+                        <div class="scene">
+                        <div class="plant">
+                            <div class="img">
+                                <div class="content-of-image">
+                                <img src="1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow"></div>
+                        </div>
+                </div> 
+            </div>
+            <div class="flex-child">
+                <div id="demo">
+                    <h1>Do you want to read about the crop.</h1>
+                    <button type="button" onclick="loadDoc()">Click Me</button>
                 </div>
-              </div>
-          </div>
-          <div class="shadow"></div>
-        </div>
-    </div>
-    <br>
-    <input type="range" min="1" max="100" value="50" id="age-slider">
-    <br>
-    <div id="secret-fact">
-       Pssssst!!! Wanna know today's secret? Click Me!!
-    </div>
-    <br>
-    <br>
+            </div>
 
+            
+            <br>
+            <br>
+            
+        </div>
+        <div id="secret-fact">
+                Pssssst!!! Wanna know today's secret? Click Me!!
+        </div>
     </div>
     <script>
         // https://css-tricks.com/animating-number-counters/ : link to score counter
@@ -112,7 +122,19 @@
         }
         }
 
-        //
+        //animation: type 4s steps(60, end);
+
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML =
+                this.responseText;
+                }
+            };
+            xhttp.open("GET", "paddy.txt", true);
+            xhttp.send();
+        }
 
         class plantAge{
             constructor(age){
@@ -121,4 +143,4 @@
         }
     </script>
 </body>
-</html> 
+</html>

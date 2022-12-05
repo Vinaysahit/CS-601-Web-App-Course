@@ -615,3 +615,18 @@ select {
   box-shadow: inset 360px 0 0 0 #291ea5;
   color: white;
 }
+.flex-container{
+  display: flex;
+}
+
+.flex-child{
+  flex:1;
+}
+.flex-child:first-child{
+  margin-right: 2px;
+  text-align: center;
+}
+#demo{
+  animation: type 4s steps(60, end);
+}
+
